@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.ucchyocean</groupId>
   <artifactId>LunaChat</artifactId>
@@ -9,7 +11,7 @@
   <licenses>
     <license>
       <name>GNU Lesser General Public License version 3</name>
-      <url>http://www.gnu.org/licenses/lgpl-3.0.en.html</url>
+      <url>https://www.gnu.org/licenses/lgpl-3.0.en.html</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
@@ -123,6 +125,14 @@
 
   <repositories>
     <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/Multiverse/Multiverse-Core</url>
+    </repository>
+    <repository>
+      <id>elmakers-repo</id>
+      <url>https://maven.elmakers.com/repository/</url>
+    </repository>
+    <repository>
       <id>jitpack.io</id>
       <name>Vault Repository</name>
       <url>https://jitpack.io/</url>
@@ -133,11 +143,6 @@
       <url>https://repo.mikeprimm.com/</url>
     </repository>
     <repository>
-      <id>onarandombox-repo</id>
-      <name>Multiverse repository</name>
-      <url>http://repo.onarandombox.com/content/repositories/multiverse/</url>
-    </repository>
-    <repository>
       <id>codemc-repo</id>
       <name>CodeMC Repository</name>
       <url>https://repo.codemc.org/repository/maven-public/</url>
@@ -145,7 +150,7 @@
     <repository>
       <id>weaondara-repo</id>
       <name>wea_ondara's Repository</name>
-      <url>http://repo.wea-ondara.net/repository/public/</url>
+      <url>https://repo.wea-ondara.net/repository/public/</url>
     </repository>
     <repository>
       <id>md5-repo</id>
@@ -160,6 +165,12 @@
   </repositories>
 
   <dependencies>
+    <dependency>
+      <groupId>org.mvplugins.multiverse.core</groupId>
+      <artifactId>multiverse-core</artifactId>
+      <version>5.7.0</version>
+      <scope>provided</scope>
+    </dependency>
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
@@ -206,13 +217,6 @@
           <artifactId>bukkit</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.onarandombox.multiversecore</groupId>
-      <artifactId>Multiverse-Core</artifactId>
-      <version>4.1.0</version>
-      <optional>true</optional>
-      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.gmail.nossr50.mcMMO</groupId>
