@@ -27,9 +27,10 @@
 # How to compile
 
 事前に以下のツールを用意してください:
-Apache Maven 3.9.x
-Git
-Java 17.x
+
+- Apache Maven 3.9.x
+- Git
+- Java 17.x
 
 ```bash
 git clone https://github.com/i14a-dsc/LunaChat
